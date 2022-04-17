@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        #nacos 的服务地址，nacos 的IP地址跟端口
+        server-addr: 127.0.0.1:8848
+
