@@ -19,9 +19,14 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
-    <spring.cloud.version>Hoxton.SR3</spring.cloud.version>
-    <com.alibaba.cloud.version>2.2.1.RELEASE</com.alibaba.cloud.version>
+    <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
+    <spring.cloud.version>Hoxton.SR12</spring.cloud.version>
+    <com.alibaba.cloud.version>2.2.7.RELEASE</com.alibaba.cloud.version>
+    <lombok.version>1.16.18</lombok.version>
+    <hutool.version>5.7.20</hutool.version>
+    <logback.core.version>1.1.11</logback.core.version>
+    <logback.classic.version>1.1.11</logback.classic.version>
+    <slf4j.api.version>1.7.25</slf4j.api.version>
   </properties>
 
   <dependencyManagement>
@@ -46,6 +51,32 @@
         <version>${com.alibaba.cloud.version}</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${logback.core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.classic.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
